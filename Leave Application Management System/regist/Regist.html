@@ -1,0 +1,91 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>regist</title>
+	<link rel="stylesheet" type="text/css" href="regist.css">
+
+</head>
+<body>
+     <div class="xiao-container">
+		<div class="xiao-register-box">
+			<div class="xiao-title-box">
+				<span>User registration</span>
+			</div>
+			<form action="insert.php" method="post">
+
+				<div class="xiao-username-box">
+
+					<span class="xiao-require">*</span>
+					<label for="username">USERNAME</label>
+<br>
+					<div class="xiao-username-input">
+						<input type="text" id="username" name="username" placeholder="Please enter a username. Length: 6-12 characters" />
+					</div>
+				</div>
+
+				<br>
+				<br>
+
+ 
+				<div class="xiao-userPassword-box">
+					<span class="xiao-require">*</span>
+
+					<label for="userPassword">PASSWORD</label>
+					<br>
+					<div class="xiao-userPassword-input">
+
+						<input type="password" id="userPassword" name="userPassword" placeholder="Please enter a password Length: 6-12 characters" />
+					</div>
+				</div>
+ 
+				
+ 	
+				<div class="xiao-level-box">
+					<span class="xiao-require">*</span>
+					<label for="userGender">LEVEL</label>
+					<br>
+					<div class="xiao-level-input">
+						<input type="radio" id="userGender_01"  name="lev" value="Admin"checked="checked" />Admin
+						<br>
+						<input type="radio" id="userGender_02" value="Manager" name="lev"  />Manager
+						<br>
+						<input type="radio" id="userGender_03" value="Staff" name="lev"  />Staff  
+						
+					</div>
+				</div>
+
+
+				<div class="xiao-userEmail-box">
+					<span class="xiao-require">*</span>
+					<label for="userEmail">DEPARTURE</label>
+					<div class="xiao-userEmail-input">
+					<select name="dep"  id="userEmail" >
+	          <option>Finance</option>
+	          <option>Personnel</option>
+	         <option>logistics </option>
+	         <option>Board of Directors</option>
+	         <option>Marketing</option>
+               </select>
+					</div>
+				</div>
+			
+<br>
+<br>
+				<div class="xiao-submit-box">
+					<input id = "xiao-submit-button" type="submit" value="register">
+				</div>
+				
+				<div class="xiao-goLogin-box">
+					<a href="../Login/login.html" >Already have an account? Go to login</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+

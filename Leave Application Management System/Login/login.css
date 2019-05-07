@@ -1,0 +1,141 @@
+
+body {
+  background-image: url("../images/login/back.png");    
+   background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#title{
+   
+    font-weight: bolder;
+    font-family: Arial;
+    font-size:50px;
+    align-content: center;
+    padding-left: 300px;
+    padding-top: 155px;
+    color: #F4A460;
+
+}
+ 
+#login_frame {
+    position: absolute;
+    width: 580px;
+    height: 420px;
+    padding: 13px;
+     position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -130px; 
+ 
+    background-color: rgba(240, 255, 255, 0.5);
+ 
+    border-radius: 10px;
+    text-align: center;
+}
+ 
+form p > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+.label_input {
+     margin-top: 20px;
+    font-size: 18px;
+    font-family: 宋体;
+    font-weight: bolder;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #2F4F4F;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 12px;
+}
+ 
+.text_field {
+    margin-top: 20px;
+    width: 290px;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    background-color: #D3D3D3;
+}
+#option_select{
+     margin-top: 20px;
+    width: 290px;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    background-color: #D3D3D3;
+}
+
+ 
+#btn_login {
+    font-size: 14px;
+    font-family: Arial;
+ font-weight: bolder;;
+    width: 130px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+ 
+    color: white;
+    background-color:  #00BFFF;
+    border-radius: 6px;
+    border: 0;
+ 
+    
+}
+
+/* #btn_login:hover{
+    width: 200px;
+    height: 60px;
+    line-height: 30px;
+    font-size: 23px;
+    text-align: center;
+    background-color: #F4A460;
+
+    text-decoration: underline;
+} */
+#regist{
+    font-size: 16px;
+    font-weight: bolder;
+    color: red;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    padding-left: 30px;
+    top: 5px;
+
+}
+#regist:hover {
+    color: #7FFF00;
+    text-decoration: underline;
+}
+
+ 
+#forget_pwd {
+    font-size: 16px;
+    font-weight: bolder;
+    color: red;
+    text-decoration: none;
+    position: relative;
+    float: right;
+    top: 5px;
+ 
+}
+ 
+#forget_pwd:hover {
+    color: blue;
+    text-decoration: underline;
+}
+ 
+#login_control {
+    margin-top: 35px;
+ position: center;
+}
+

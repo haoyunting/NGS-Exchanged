@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Login</title>
+
+    <link rel="stylesheet" type="text/css" href="login.css"/>
+     <script type="text/javascript" src="login.js"></script> 
+</head>
+<body>
+
+	<div  id="title"> <p1 id="p1">L<p1>eave Application Management System</div> 
+	<div id="login_frame">	
+
+<form method="post" action="check_login.php">
+
+<p>
+
+<label class="label_input">Username</label>
+<input type="text" id="username" class="text_field" name="username"/>
+</p>
+
+
+<p>
+ <label class="label_input">Password</label>
+ <input type="text" id="password" class="text_field" name="password"/>
+</p>
+
+
+<p>
+ <label class="label_input">Level</label>
+ <select id="option_select" name="level" class="text_field">
+                <option>Staff</option>
+                <option>Manager</option>
+                <option>Admin</option>
+</select>
+</p>
+
+
+
+<p>
+<label class="label_input">Department</label>
+<select name="department"  id="option_select" class="text_field">
+	          <option>Finance</option>
+	          <option>Personnel</option>
+	         <option>logistics </option>
+	         <option>Board of Directors</option>
+	         <option>Marketing</option>
+</select>
+</p>
+
+
+<p>
+ <div id="login_control">
+
+         <input type="submit" id="btn_login" value="Let me in" />
+          <!--  <input type="button"  id="btn_login" value="LOGIN" onclick="login();"/>  -->
+            <br> 
+            <a id="regist" href="../regist/Regist.html">Registration</a> 
+            <!-- <a id="forget_pwd" href="forget_pwd.html">Forget Password?</a>  -->
+        </div>
+</p>
+</form>
+</body>
+</html>

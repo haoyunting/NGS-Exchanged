@@ -1,0 +1,158 @@
+
+	body,input{
+		margin: 0;
+		padding: 0;
+		background-size: 1500px 900px;
+		background-repeat: no-repeat;
+
+		background-image: url("../images/regist/bg.jpg");
+	}
+	input,select{
+		display: inline-block;
+		background: #fff;
+	}
+	.xiao-container{
+		width: 100%;
+	}
+	.xiao-register-box{
+		position: relative;
+		height: 780px;
+		width: 800px;
+		top: 60px;
+		margin: 0 auto;
+		z-index: 99999;
+		background: 	#FFFACD;
+		border: 7px solid #ccc;
+	}
+	.xiao-title-box{
+		position: absolute;
+		width: 300px;
+		height: 50px;
+		margin-left: 280px;
+		margin-top: 20px;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 800;
+		color: #ff5000;
+		line-height: 50px;
+	}
+	.xiao-username-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:100px;
+		margin-left:80px;
+		font-weight: 700;
+	}
+	.xiao-username-input{
+		display: inline-block;
+		margin-left: 61px;
+		/*background: green;*/
+	}
+	#username{
+		height: 50px;
+		width: 600px;
+		border: 4px solid #ccc;
+		border-radius: 5px;
+	}
+
+
+	.xiao-userPassword-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:180px;
+		margin-left:80px;
+		font-weight: 700;
+	}
+	.xiao-userPassword-input{
+		display: inline-block;
+		margin-left: 61px;
+	}
+	#userPassword{
+		height: 50px;
+		width: 600px;
+		border: 4px solid #ccc;
+		border-radius: 5px;
+	}
+
+ 
+	.xiao-level-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:300px;
+		margin-left:82px;
+		font-weight: 700;
+	}
+	.xiao-level-input{
+		display: inline-block;
+		margin-left: 62px;
+	}
+
+.xiao-userEmail-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:480px;
+		margin-left:80px;
+		font-weight: 700;
+	}
+	.xiao-userEmail-input{
+		display: inline-block;
+		margin-left: 61px;
+	}
+	#userEmail{
+		height: 50px;
+		width: 600px;
+		border: 4px solid #ccc;
+		border-radius: 5px;
+
+
+}
+	
+	.xiao-require{
+		color: red;
+	}
+
+
+
+	.xiao-submit-box{
+		position:absolute;
+		width: 80px;
+		height: 40px;
+		line-height: 40px;
+		margin-top: 600px;
+		margin-left:180px;
+		border-radius: 5px;
+		background: grey;
+	}
+	#xiao-submit-button{
+		display: inline-block;
+		width: 120px;
+		height: 50px;
+		border-radius: 6px;
+		background: orange;
+	}
+	.xiao-goLogin-box{
+		position:absolute;
+		width: 400px;
+		height: 20px;
+		margin-top: 610px;
+		margin-left:400px;
+ 
+	}
+	a:hover{
+		font-size: 20px;
+		font-weight: bolder;
+		background-color: rgb(255,69,0);
+	}
+
+
+
+
+	
