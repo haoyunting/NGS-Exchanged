@@ -1,0 +1,52 @@
+
+.table1{
+	border: 2px solid gray;
+	margin: auto;
+}
+.im1{
+	height: 59px;
+	width: 59px;
+
+}
+.main{
+	margin: auto;
+}
+.title{
+	color: rgb(192,192,192);
+	font-weight: 10px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.td1{
+	width: 200px;
+	height: 50px;
+	text-align: right;
+}
+.td2{
+	width: 300px;
+	height: 50px;
+	text-align: center;
+}
+.time01{
+	margin-top: 15px;
+	margin-left: 30px;
+	float: left;
+	margin-right: -30px;
+}
+.textarea1{
+	margin: 9px;
+}
+.webbtn{
+	width: 70px;
+	height: 30px;
+	background-color: #707070;
+	color: white;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-left: 920px;
+}
+body{
+	background-image: url(../images/1.png);
+	color:white;
+}
