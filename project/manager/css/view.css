@@ -1,0 +1,91 @@
+		body{
+    		background-image: url("../images/back.jpg");
+    		opacity: 0.8;
+    		background-size: cover;
+    		background-repeat: no-repeat;
+    	}
+    	a{
+    		text-decoration: none;
+    		color: black;	
+    	}
+    	a:hover{
+    		color: whitesmoke;
+    		
+    	}
+    	
+    	.title{
+    		font-size: x-large;
+    		
+    		margin-left: 500px;
+    	}
+    	.user{
+    		float: right;
+    		margin-right: 100px;
+    		letter-spacing: 1px;
+    	}
+    	.userimg{
+    		 border-radius:50%;
+    		 width: 30px;
+    	}
+        .htitle{
+            margin-inline-start: 35em;
+            letter-spacing: 0.2em;
+        }
+    	
+    	#menu{
+    		float: left;
+            margin-left: 50px;
+    	}
+			.menu li{
+			width: 150px;
+			list-style: none;
+			line-height: 50px;
+			font-size: larger;
+			font-weight: bold;
+			text-align: center;
+			border-right:  5px solid gray;
+			border-bottom: 5px solid gray;
+		}
+    
+    	#staff{
+    		float: left;
+    		margin-left: 150px;
+    		width: 700px;
+    		height: 350px;
+            overflow-y: scroll;
+
+    	}
+        .staff{
+            width: 600px;
+            text-align: center;
+            line-height: 40px;
+            height: 350px;
+            overflow-y: scroll;
+            
+        }
+    	.staff th,td,tr,{
+    		height: 40px;
+            width: 60px;
+            
+    	}
+    	
+    	#application{
+    		float: left;
+            margin-top: 50px;
+    		margin-left: 50px;
+    		width: 80%;
+    		height: 500px;
+            overflow-x: scroll;
+            display: inline;
+    	}
+    	
+        #table1{
+            float: left;
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        #table1 td{
+            width: 150px;
+            height: 50px;
+        }

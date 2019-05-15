@@ -1,0 +1,69 @@
+		body{
+    		background-image: url("../images/back.jpg");
+			background-size:cover;	
+			background-repeat:no-repeat;
+    	}
+    	a{
+    		text-decoration: none;
+    		color: black;	
+    	}
+    	a:hover{
+    		color: whitesmoke;
+    		
+    	}
+    	
+    	.title{
+    		font-size: x-large;
+    		
+    		margin-left: 500px;
+    	}
+    	.user{
+    		float: right;
+    		margin-right: 100px;
+    		letter-spacing: 1px;
+    	}
+    	.userimg{
+    		 border-radius:50%;
+    		 width: 30px;
+    	}
+    	.logout{
+			width: 50px;
+			
+		}
+    	#menu{
+    		float: left;
+            margin-left: 50px;
+    	}
+			.menu li{
+			width: 150px;
+			list-style: none;
+			line-height: 50px;
+			font-size: larger;
+			font-weight: bold;
+			text-align: center;
+			border-right:  5px solid gray;
+			border-bottom: 5px solid gray;
+		}
+
+			#inf{
+				float: left;
+                width: 300px;
+                height: 300px;
+                margin-left: 250px;
+                letter-spacing: 0.1em;
+			}
+			
+    	.basic{
+            margin-top: 50px;
+    		padding-left: 50px;
+    		
+    	}
+    	.basic td{
+    		padding: 10px;
+
+    	}
+
+    	input,select {
+    		margin: 10px;
+    	}
+    	
