@@ -29,14 +29,15 @@
 	$db = mysql_connect("localhost","zj","201901f10075");
     mysql_select_db("db_zj", $db);
 
+
 	if(isset($_GET['order'])){
 		$orderby = $_GET['order'];
 
 		if($orderby == 'username'){
-			$sql="SELECT * FROM stuff WHERE level='stuff' ORDER BY username";		
+			$sql="SELECT * FROM staff WHERE level='Staff' ORDER BY username";		
 		}
 		else if($orderby == 'department'){
-			$sql="SELECT * FROM stuff WHERE level='stuff' ORDER BY department";	
+			$sql="SELECT * FROM staff WHERE level='Staff' ORDER BY department";	
 		}	
 		
 	}
@@ -47,13 +48,13 @@
 			<tr>
 	    		<th> 
 	    			<a href="view.php?order='name'">name</a> 
-	    			<a href="stuffAfterOrder.php?order=username"> ▴ </a>
-	    			<a href="stuffAfterOrderdes.php?order=username"> ▾ </a>
+	    			<a href="staffAfterOrder.php?order=username"> ▴ </a>
+	    			<a href="staffAfterOrderdes.php?order=username"> ▾ </a>
 	    		</th>
 	    		<th>
 	    			<a href="view.php?order='name'">Department</a>
-	    			<a href="stuffAfterOrder.php?order=department"> ▴ </a>
-	    			<a href="stuffAfterOrderdes.php?order=department"> ▾ </a>
+	    			<a href="staffAfterOrder.php?order=department"> ▴ </a>
+	    			<a href="staffAfterOrderdes.php?order=department"> ▾ </a>
 	    		</th>
   			</tr>
 
@@ -63,7 +64,7 @@
 			$result = mysql_query($sql,$db);
 			while($attr = mysql_fetch_array($result)){?>
 			    <tr>
-			      <td><a href="afteroder.php?name=<?php echo $attr[1]; ?>"><?php echo $attr[1]; ?></a></td>
+			      <td><a href="view.php?username=<?php echo $attr[1]; ?>"><?php echo $attr[1]; ?></a></td>
 			      <td><?php echo $attr[4]; ?></td>
 			  	</tr>
 		 <?php } ?>	

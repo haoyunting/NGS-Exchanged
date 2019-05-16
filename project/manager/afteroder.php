@@ -7,7 +7,7 @@
   </head>
   <body>
   	<div>
-  		<a href="manager.html"><img src="images/return.png" /></a>
+  		<a href="#"  onclick="JavaScript:window.history.back();" ><img src="images/return.png" /></a>
   		<span class="title">View Page</span>
   		<span class="user">user:&nbsp;&nbsp;&nbsp;&nbsp;
   			<img src="images/3.jpeg" class="userimg"></span>

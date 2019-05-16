@@ -7,7 +7,7 @@
   </head>
   <body>
   	<div>
-  		<a href="manager.html"><img src="images/return.png" /></a>
+  		<a href="#"  onclick="JavaScript:window.history.back();" ><img src="images/return.png" /></a>
   		<span class="title">Information Page</span>
   		<span class="user">user:&nbsp;&nbsp;
   			<img src="images/3.jpeg" class="userimg">&nbsp;
@@ -30,12 +30,22 @@
   	
   	<div id="inf">
         <?php
-          $username="ding";
+          $username=$_GET['username'];
           $db = mysql_connect("localhost","zj","201901f10075");
           mysql_select_db("db_zj", $db);
-          $sql = "SELECT * FROM stuff WHERE username='$username'";
+          $sql = "SELECT * FROM staff where username='$username'";
           $result = mysql_query($sql,$db);
-          while($attr = mysql_fetch_array($result)){?>
+          
+         while($attr = mysql_fetch_array($result)){
+      if($attr[1]==$username){
+        $id=$attr[0];
+        $password=$attr[2];
+        $level=$attr[3];
+        $department=$attr[4];
+      }
+      
+
+            ?>
               <form method="post" action="change-inf.php">
                 <table class="basic">
                   <tr>
@@ -52,7 +62,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td><label>Stufflevel:</label></td>
+                    <td><label>Stafflevel:</label></td>
                     <td>
                       <input type="text" name="level" value="<?php echo $attr[3]; ?>">
                     </td>

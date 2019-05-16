@@ -32,10 +32,10 @@
 		$orderby = $_GET['order'];
 
 		if($orderby == 'department'){
-			$sql="SELECT * FROM stuff ORDER BY department DESC";		
+			$sql="SELECT * FROM staff ORDER BY department DESC";		
 		}
 		else if($orderby == 'username'){
-			$sql="SELECT * FROM stuff ORDER BY username DESC";	
+			$sql="SELECT * FROM staff ORDER BY username DESC";	
 		}			
 	}
 ?>
@@ -46,13 +46,13 @@
 			<tr>
 	    		<th> 
 	    			<a href="view.php?order='name'">name</a> 
-	    			<a href="stuffAfterOrder.php?order=username"> ▴ </a>
-	    			<a href="stuffAfterOrderdes.php?order=department"> ▾ </a>
+	    			<a href="staffAfterOrder.php?order=username"> ▴ </a>
+	    			<a href="staffAfterOrderdes.php?order=department"> ▾ </a>
 	    		</th>
 	    		<th>
 	    			<a href="">Department</a>
-	    			<a href="stuffAfterOrder.php?order=department"> ▴ </a>
-	    			<a href="stuffAfterOrderdes.php?order=department"> ▾ </a>
+	    			<a href="staffAfterOrder.php?order=department"> ▴ </a>
+	    			<a href="staffAfterOrderdes.php?order=department"> ▾ </a>
 	    		</th>
   			</tr>
 

@@ -37,7 +37,7 @@ session_start();
 		<div class="content_item">
 			<div><img src="images/1.svg"></div>
 			<div><span>Manager information</span></div>
-			<a href="information.php" class="enter_but">ENTER</a>
+			<a href="information.php?username=<?php echo Output();?>" class="enter_but">ENTER</a>
 		</div>
 
 	</div>
