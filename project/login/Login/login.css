@@ -1,6 +1,6 @@
 
 body {
-  background-image: url("../images/login/back.png");    
+  background-image: url("../images/login/back.jpg");    
    background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -13,8 +13,7 @@ body {
     align-content: center;
     padding-left: 300px;
     padding-top: 155px;
-    color: #F4A460;
-
+    color: white;
 }
  
 #login_frame {
