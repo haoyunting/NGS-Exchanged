@@ -31,7 +31,7 @@ session_start();
 		<div class="content_item content_1">
 			<div><img src="../images/personal.png"></div>
 			<div><span>Personal information</span></div>
-			<a href="personal0.php?username=<?php echo $username;?>" class="enter_but">View</a>
+			<a href="personal0.php?username=<?php echo Output();?>" class="enter_but">View</a>
 		</div>
 
 		<div class="content_item content_2">
@@ -43,7 +43,7 @@ session_start();
 		<div class="content_item content_4">
 			<div><img src="../images/result.png"></div>
 			<div><span>Application result</span></div>		
-			<a href="result.php?username=<?php echo $username;?>" class="enter_but">View</a>	
+			<a href="result.php?username=<?php echo Output();?>" class="enter_but">View</a>	
 		</div>
 	</div>
 
