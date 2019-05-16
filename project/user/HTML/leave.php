@@ -3,6 +3,7 @@
 <!DOCTYPE>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Office system leave</title>
 	<link rel="stylesheet" type="text/css" href="../CSS/leave.css">
 

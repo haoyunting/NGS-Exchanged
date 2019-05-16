@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>CRUD:CReate,UPdate,DElete PHP MySQL</title>
 	<link rel="stylesheet" type="text/css" href="applicationList.css">
 	<?php 
@@ -15,7 +16,7 @@
 <body>
 <div class="conter">
 	<a href="index.html"><img src="images/5.svg" class="return"></a>
-	<a href="#"><img src="images/7.svg" class="check"></a>
+	<a href="../manager/Approval.php"><img src="images/7.svg" class="check"></a>
 
 	<table>
 		<thead>

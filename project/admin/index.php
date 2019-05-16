@@ -1,18 +1,28 @@
+<?php
+session_start();
+    function Output(){
+    	
+        echo $_SESSION['USER']; 
+     }
+?>
+
+
 <!DOCTYPE html>
 
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 	<div>
 		<div class="text1">
-			<p class="p1">H E L L O , N A M E</p>
+			<p class="p1">H E L L O , <?php Output();?></p>
 		</div>
 
 		<div class="text2">
-			<p class="p2"><b>Dear Admin , What do you want to do?</b></p>
+			<p class="p2"><b>Dear <?php Output();?>, What do you want to do?</b></p>
 		</div>
 	</div>
 
@@ -32,7 +42,7 @@
 		<div class="content_item content_4">
 			<div><img src="images/4.svg"></div>
 			<div><span>Log Out</span></div>
-			<a href="" class="enter_but">ENTER</a>
+			<a href="../login/Login/login.html" class="enter_but">ENTER</a>
 		</div>
 
 	</div>

@@ -1,3 +1,16 @@
+<?php
+		$db = mysql_connect("localhost","zj","201901f10075");
+   		mysql_select_db("db_zj", $db);
+		$sql = "select * from application where status='waiting'";
+		$result = mysql_query($sql,$db);
+		while($attr = mysql_fetch_array($result)){
+			$id = $attr[0];
+			$username = $attr[1];
+			$department = $attr[2];
+			$begintime = $attr[3];
+			$day = $attr[4];
+			$reason = $attr[5];
+		 ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -26,19 +39,7 @@
   	</div>
 	
 	<div id="box" align="center">
-    <?php
-		$db = mysql_connect("localhost","zj","201901f10075");
-   		mysql_select_db("db_zj", $db);
-		$sql = "select * from application where status='waiting'";
-		$result = mysql_query($sql,$db);
-		while($attr = mysql_fetch_array($result)){
-			$id = $attr[0];
-			$username = $attr[1];
-			$department = $attr[2];
-			$begintime = $attr[3];
-			$day = $attr[4];
-			$reason = $attr[5];
-		 ?>
+    
 		<div class="one">
 		<form method="post" action="action.php">
 	  		<table class="table1" border="1" cellspacing="0">

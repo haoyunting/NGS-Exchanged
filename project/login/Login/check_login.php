@@ -29,7 +29,7 @@ $_SESSION["Login"] = "YES";
 $_SESSION['USER'] = $user_name;
 $_SESSION['ID'] = $user_id;
 $_SESSION['LEVEL'] = $user_level;
-
+header("location:document_level.php");
 /*echo "<p><a href='document_level.php'><h1>You are now correctly logged in</h1></a></p>";*/
 
  
@@ -44,7 +44,7 @@ echo "<h1>Incorrect username or password </h1>";
 echo "<p><a href='../regist/Regist.html'> return to regist</a></p>";
 }
 
-header("location:document_level.php")
+
 
 ?>
 		 

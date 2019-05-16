@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>CRUD:CReate,UPdate,DElete PHP MySQL</title>
 	<link rel="stylesheet" type="text/css" href="css/view.css">
 </head>

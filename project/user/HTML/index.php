@@ -1,20 +1,30 @@
+
+<?php
+session_start();
+    function Output(){
+    	
+        echo $_SESSION['USER']; 
+     }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>index</title>
 	<link rel="stylesheet" type="text/css" href="../CSS/index.css">
 
-	<?php
+	<!-- <?php
 		if(isset($_GET['username'])){
 			$username=$_GET['username'];
-
+	
 		}
 		$username="ding";
-	?>
+	?> -->
 </head>
 <body>
 	<div class="text2">
-		<p><b><span class="p1"> Office System</span><br><span class="p2">Dear <?php echo $username;?>, what do you want to do?</span></b></p>
+		<p><b><span class="p1"> Office System</span><br><span class="p2">Dear <?php Output();?>, what do you want to do?</span></b></p>
 	</div>
 
 	<div class="content">

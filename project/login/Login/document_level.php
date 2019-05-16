@@ -6,7 +6,7 @@ if ($_SESSION["LEVEL"] == Admin) {
  echo '<p>Welcome, '.$_SESSION['USER']; 
  echo '<p>You are user level is:'.$_SESSION['LEVEL'];
   /*echo "<p><a href='../../admin/index.html'>Admin Page</a></p>";  */
-  header("location:../../admin/index.html");
+  header("location:../../admin/index.php");
 
 
  }
@@ -17,7 +17,7 @@ else if ($_SESSION["LEVEL"] == Manager) {
  echo '<p>Welcome, '.$_SESSION['USER']; 
  echo '<p>You are user level is: '.$_SESSION['LEVEL'];
 /* echo "<p><a href='../../manager/manager.html'>Manager Page</a></p>"; */ //need to modify
-	 header("location:../../manager/manager.html");
+	 header("location:../../manager/manager.php");
   
  }
  else{

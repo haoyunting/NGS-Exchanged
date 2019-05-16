@@ -1,3 +1,10 @@
+<?php
+session_start();
+    function Output(){
+    	
+        echo $_SESSION['USER']; 
+     }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +15,7 @@
 <body>
 	<div align="center">
 		<br>
-		<h2 style="letter-spacing: 0.3em;">HELLO,manager!</h2>
+		<h2 style="letter-spacing: 0.3em;">HELLO,<?php Output();?>!</h2>
 		<br>
 		<h3>You can operate...</h3>
 	</div>  

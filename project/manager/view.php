@@ -44,7 +44,7 @@
   		<?php 
 			$db = mysql_connect("localhost","zj","201901f10075");
     		mysql_select_db("db_zj", $db);
-        	$sql = "select * from stuff where level = 'stuff' ";
+        	$sql = "select * from staff where level = 'staff' ";
         	$result = mysql_query($sql,$db);
         	while($attr = mysql_fetch_array($result)){
 			$id = $attr[0];
