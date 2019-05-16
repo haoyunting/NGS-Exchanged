@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="conter">
-	<a href="index.html"><img src="images/5.svg" class="return"></a>
+	<a href="index.php"><img src="images/5.svg" class="return"></a>
 	<a href="addStaff.php"><img src="images/6.svg" class="add"></a>
 
 	<table>
@@ -25,7 +25,7 @@
 	    		<th><a href="">n a  m e</a><a class="aa" href="staffAfterOrder.php?order=username"> ▴ </a><a class="aa" href="staffAfterOrderdes.php?order=username"> ▾ </a></th>
 	    		<th>P a s s w o r d</th>
 	    		<th><a href="">L e v e l</a><a class="aa" href="staffAfterOrder.php?order=level"> ▴ </a><a class="aa" href="staffAfterOrderdes.php?order=level"> ▾ </a></th>
-	    		<th><a href="">D e p a r t m e n t</a><a class="aa" href="staffAfterOrder.php?order=department"> ▴ </a><a class="aa" href="staffAfterOrderdes.php?order=department"> ▾ </a></th>
+	    		<th><a href="">D e p a r t</a><a class="aa" href="staffAfterOrder.php?order=department"> ▴ </a><a class="aa" href="staffAfterOrderdes.php?order=department"> ▾ </a></th>
 	    		<th>A c t i o n </th>
   			</tr>
 		</thead>

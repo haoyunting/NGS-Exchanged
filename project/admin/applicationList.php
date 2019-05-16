@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="conter">
-	<a href="index.html"><img src="images/5.svg" class="return"></a>
+	<a href="index.php"><img src="images/5.svg" class="return"></a>
 	<a href="../manager/Approval.php"><img src="images/7.svg" class="check"></a>
 
 	<table>
@@ -27,7 +27,7 @@
 
 				<th>P a s s w o r d</th>
 				
-				<th><a>Department</a><a class="aa" href="applicationAfterOrder.php?order=Department">▴</a><a class="aa" href="applicationAfterOrderdes.php?order=Department">▾</a> </th>
+				<th><a>Depart</a><a class="aa" href="applicationAfterOrder.php?order=Department">▴</a><a class="aa" href="applicationAfterOrderdes.php?order=Department">▾</a> </th>
 
 				<th><a>Begintime</a><a class="aa" href="applicationAfterOrder.php?order=Begintime">▴</a><a class="aa" href="applicationAfterOrderdes.php?order=Begintime">▾</a> </th>
 

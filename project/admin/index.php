@@ -13,7 +13,7 @@ session_start();
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="index.css">z
 </head>
 <body>
 	<div>

@@ -28,7 +28,7 @@
 </head>
 <body>
 <div class="conter">
-	<a href="index.html" onclick="javascript:return del();"><img src="images/5.svg" class="return"></a>
+	<a href="index.php" onclick="javascript:return del();"><img src="images/5.svg" class="return"></a>
 
 	<div class="set">
 		<div class="title">
@@ -60,7 +60,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td><label>Department:</label></td>
+							<td><label>Depart:</label></td>
 							<td>
 								<input type="text" name="department" value="<?php echo $attr[4]; ?>">
 							</td>

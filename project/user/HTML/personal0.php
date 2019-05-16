@@ -69,7 +69,7 @@
 			</table>
 			<div>
 				<button class="but1" onclick="{location.href='personal.php?username=<?php echo $username;?>'}">Edit</button>&nbsp;&nbsp;&nbsp;
-				<button class="but2">Save</button>
+				<button class="but2" type="submit" name="save">Save</button>
 			</div>
 		</div>
 	</div>
