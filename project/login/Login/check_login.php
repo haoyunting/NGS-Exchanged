@@ -41,7 +41,7 @@ else {
 $_SESSION["Login"] = "NO";
  
 echo "<h1>Incorrect username or password </h1>";
-echo "<p><a href='../regist/Regist.html'> return to regist</a></p>";
+echo "<p><a href='login.html'> restart to login</a></p>";
 }
 
 
