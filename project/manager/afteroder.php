@@ -31,8 +31,8 @@
   		if(isset($_GET['name'])){
 			$username = $_GET['name'];
 			$sql = "SELECT * FROM application WHERE username='$username' ";
-			$result = $db->query($sql);
-			while($attr = $result->fetch_row()){
+			$result = mysql_query($sql,$db);
+			while($attr = mysql_fetch_array($result)){
 				$id = $attr[0];
 				$username = $attr[1];
 				$department = $attr[2];

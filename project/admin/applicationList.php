@@ -1,19 +1,19 @@
-<?php 
-	session_start();
-	$db = mysql_connect("localhost","zj","201901f10075");
-    mysql_select_db("db_zj", $db);
- ?>
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>CRUD:CReate,UPdate,DElete PHP MySQL</title>
 	<link rel="stylesheet" type="text/css" href="applicationList.css">
+	<?php 
+		session_start();
+		$db = mysql_connect("localhost","zj","201901f10075");
+	    mysql_select_db("db_zj", $db);
+	    $results = mysql_query("SELECT * FROM application",$db);
+	    $i=1;
+	 ?>
+
 </head>
 <body>
 <div class="conter">
-	<?php $results = mysql_query("SELECT * FROM application",$db); ?>
-
 	<a href="index.html"><img src="images/5.svg" class="return"></a>
 	<a href="#"><img src="images/7.svg" class="check"></a>
 
@@ -40,8 +40,7 @@
 				<th><a>Checker</a><a class="aa" href="applicationAfterOrder.php?order=Checker">▴</a><a class="aa" href="applicationAfterOrderdes.php?order=Checker">▾</a> </th>
 			</tr>
 		</thead>
-
-		<?php $i=1; ?>
+		
 		<?php while($row = mysql_fetch_array($results)){ ?>
 			<tr>
 				<td><?php echo $i; ?> </td>

@@ -3,6 +3,7 @@
 <head>
 	<title>CRUD:CReate,UPdate,DElete PHP MySQL</title>
 	<link rel="stylesheet" type="text/css" href="addStaff.css">
+
 	<script type="text/javascript">
 		function del() {
 			var msg = "\n*********Information will not be retained after leaving***********\n\n************************Are you really leaving?********************";
@@ -13,6 +14,15 @@
 			}
 		}
 	</script>
+
+	<?php
+		$id = $_GET["id"];
+		$db = mysql_connect("localhost","zj","201901f10075");
+		mysql_select_db("db_zj", $db);
+		$sql = "select * from staff where id='$id'";
+		$result = mysql_query($sql,$db);
+		$attr = mysql_fetch_array($result)
+	?>	
 
 </head>
 <body>
@@ -25,20 +35,7 @@
 		</div>
 
 		<div class="input_form">
-			<?php
-
-				$id = $_GET["id"];//取到cade主键值。去查询数据
-
-				$db = mysql_connect("localhost","zj","201901f10075");
-                mysql_select_db("db_zj", $db);
-
-				$sql = "select * from staff where id='$id'";
-
-				$result = mysql_query($sql,$db);
-
-				$attr = mysql_fetch_array($result)
-
-			?>
+			
 			<form method="post" action="server_staff.php">
 				<div>
 					<table>

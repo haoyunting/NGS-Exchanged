@@ -25,7 +25,7 @@
   	</div>
 <?php 
 	$db = mysql_connect("localhost","zj","201901f10075");
-
+    mysql_select_db("db_zj", $db);
 
 	if(isset($_GET['order'])){
 		$orderby = $_GET['order'];
@@ -57,9 +57,9 @@
 
 
 		<?php 
-			$result = $db->query($sql);
+			$result = mysql_query($sql,$db);
 			$i=1;
-			while($attr = $result->fetch_row()){?>
+			while($attr = mysql_fetch_array($result)){?>
 			    <tr>
 			      
 			      <td><?php echo $attr[1]; ?></td>

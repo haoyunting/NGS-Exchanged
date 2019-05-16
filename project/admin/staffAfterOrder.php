@@ -3,30 +3,29 @@
 <head>
 	<title>CRUD:CReate,UPdate,DElete PHP MySQL</title>
 	<link rel="stylesheet" type="text/css" href="staffList.css">
+
+	<?php 
+		$db = mysql_connect("localhost","zj","201901f10075");
+	    mysql_select_db("db_zj", $db);
+
+		if(isset($_GET['order'])){
+			$orderby = $_GET['order'];
+
+			if($orderby == 'department'){
+				$sql="SELECT * FROM staff ORDER BY department";		
+			}
+			else if($orderby == 'level'){
+				$sql="SELECT * FROM staff ORDER BY level";	
+			}	
+			else if($orderby == 'username'){
+				$sql="SELECT * FROM staff ORDER BY username";	
+			}			
+		}
+	?>
 </head>
 <body>
 <div class="conter">
-<?php 
-	$db = mysql_connect("localhost","zj","201901f10075");
-    mysql_select_db("db_zj", $db);
-
-	if(isset($_GET['order'])){
-		$orderby = $_GET['order'];
-
-		if($orderby == 'department'){
-			$sql="SELECT * FROM staff ORDER BY department";		
-		}
-		else if($orderby == 'level'){
-			$sql="SELECT * FROM staff ORDER BY level";	
-		}	
-		else if($orderby == 'username'){
-			$sql="SELECT * FROM staff ORDER BY username";	
-		}			
-	}
-?>
-
 	<a href="index.html"><img src="images/5.svg" class="return"></a>
-
 	<a href="addStaff.php"><img src="images/6.svg" class="add"></a>
 
 	<table>

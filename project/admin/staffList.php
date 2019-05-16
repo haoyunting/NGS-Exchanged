@@ -4,18 +4,17 @@
 <head>
 	<title>CRUD:CReate,UPdate,DElete PHP MySQL</title>
 	<link rel="stylesheet" type="text/css" href="staffList.css">
-</head>
-<body>
-<div class="conter">
+
 	<?php 
 		 $db = mysql_connect("localhost","zj","201901f10075");
          mysql_select_db("db_zj", $db);
 		 $sql = "select * from staff";
 		 $result = mysql_query($sql,$db);
 	?>
-
+</head>
+<body>
+<div class="conter">
 	<a href="index.html"><img src="images/5.svg" class="return"></a>
-
 	<a href="addStaff.php"><img src="images/6.svg" class="add"></a>
 
 	<table>
@@ -29,8 +28,7 @@
 	    		<th>A c t i o n </th>
   			</tr>
 		</thead>
-		<?php $i=1 ?>
-		<?php while($attr = mysql_fetch_array($result)){ ?>
+		<?php $i=1; while($attr = mysql_fetch_array($result)){?>
 			<tr>
 				<td><?php echo $i; ?></td>
 				<td><?php echo $attr[1]; ?></td>
@@ -53,7 +51,6 @@
 
 					<a href="server_staff.php?del=<?php echo $attr[0]; ?>" onclick="javascript:return del();" class="del_btn"><u>Delete</u></a>
 				</td>
-
 			</tr>
 		<?php $i++;} ?> 
 	</table> 

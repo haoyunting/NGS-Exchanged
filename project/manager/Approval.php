@@ -27,10 +27,11 @@
 	
 	<div id="box" align="center">
     <?php
-		$db = mysqli_connect('localhost','root','','test');
+		$db = mysql_connect("localhost","zj","201901f10075");
+   		mysql_select_db("db_zj", $db);
 		$sql = "select * from application where status='waiting'";
-		$result = $db->query($sql);
-		while($attr = $result->fetch_row()){
+		$result = mysql_query($sql,$db);
+		while($attr = mysql_fetch_array($result)){
 			$id = $attr[0];
 			$username = $attr[1];
 			$department = $attr[2];

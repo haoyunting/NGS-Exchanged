@@ -1,8 +1,9 @@
 <?php
 	session_start();
   	$db = mysql_connect("localhost","zj","201901f10075");
+    mysql_select_db("db_zj", $db);
     $sql="SELECT * FROM stuff";
-    $result = $db->query($sql);
+    $result = mysql_query($sql,$db);
 
   if(isset($_POST['username'])){
   		$id=$_POST['id'];
@@ -14,7 +15,7 @@
 		mysqli_query($db,"UPDATE stuff 
  			SET id='$id',username='$username',password='$password',level='$level',department='$department' WHERE username='$username'");
   }
-    $result = $db->query($sql);
+    $result = mysql_query($sql,$db);
     header("location:information.php");
  	
 ?>

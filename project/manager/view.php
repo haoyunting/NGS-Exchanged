@@ -42,10 +42,11 @@
 	    		</th>
   			</tr>
   		<?php 
-			$db = mysqli_connect('localhost','root','','test');
+			$db = mysql_connect("localhost","zj","201901f10075");
+    		mysql_select_db("db_zj", $db);
         	$sql = "select * from stuff where level = 'stuff' ";
-        	$result = $db->query($sql);
-        	while($attr = $result->fetch_row()){
+        	$result = mysql_query($sql,$db);
+        	while($attr = mysql_fetch_array($result)){
 			$id = $attr[0];
 			$username = $attr[1];
 			$department = $attr[4]; 
@@ -64,7 +65,7 @@
   		if(isset($_GET['username'])){
 			$username = $_GET['username'];
 			$sql = "SELECT * FROM application WHERE username='$username' ";
-			$result = $db->query($sql);
+			$result = mysql_query($sql,$db);
 			while($attr = $result->fetch_row()){
 				$id = $attr[0];
 				$username = $attr[1];
@@ -146,8 +147,8 @@
   		if(isset($_GET['username'])){
 			$username = $_GET['username'];
 			$sql = "SELECT * FROM application WHERE username='$username' ";
-			$result = $db->query($sql);
-			while($attr = $result->fetch_row()){
+			$result = mysql_query($sql,$db);
+			while($attr = mysql_fetch_array($result)){
 				$id = $attr[0];
 				$username = $attr[1];
 				$department = $attr[2];
