@@ -24,8 +24,6 @@
 				<th>No.</th>
 	    		
 				<th><a>name</a><a class="aa" href="applicationAfterOrder.php?order=username">▴</a><a class="aa" href="applicationAfterOrderdes.php?order=username">▾</a> </th>
-
-				<th>P a s s w o r d</th>
 				
 				<th><a>Depart</a><a class="aa" href="applicationAfterOrder.php?order=Department">▴</a><a class="aa" href="applicationAfterOrderdes.php?order=Department">▾</a> </th>
 
@@ -46,7 +44,6 @@
 			<tr>
 				<td><?php echo $i; ?> </td>
 				<td><?php echo $row['username']; ?></td>
-				<td><?php echo $row['password']; ?></td>
 				<td><?php echo $row['department']; ?></td>
 				<td><?php echo $row['begintime']; ?></td>
 				<td><?php echo $row['days']; ?></td>
