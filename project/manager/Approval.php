@@ -14,17 +14,6 @@
   			<img src="images/3.jpeg" class="userimg"></span>
   	</div><br><br>
   	<h2 align="center">Leave application</h2>
-  	<div id="menu">
-  		<ul class="menu">
-  			<li><a href="">home</a></li>
-  			<li><a href="">admin</a></li>
-  			<li><a href="">login</a></li>
-  			<li><a href="">regist</a></li>
-  			<li><a href="">search</a></li>
-  			<li><a href="">my</a></li>
-  			<li><a href="">set</a></li>
-  		</ul>
-  	</div>
 	
 	<div id="box" align="center">
     <?php
@@ -45,24 +34,24 @@
 	  		<table class="table1" border="1" cellspacing="0">
 					<tr>
 						<td>NAME：</td>
-						<td><input type="text" name="username" value="<?php echo $username; ?>"></td>
+						<td><input type="text" disabled name="username" value="<?php echo $username; ?>"></td>
 					</tr>
 					<tr>
 						<td>TYPE:</td>
-						<td><input type="text" name="department" value="<?php echo $department; ?>"></td>
+						<td><input type="text" disabled name="department" value="<?php echo $department; ?>"></td>
 					</tr>
 					<tr>
 						<td>START:</td>
-						<td><input type="text" id="starttime" name="begintime" value="<?php echo $begintime; ?>"></td>
+						<td><input type="text" disabled id="starttime" name="begintime" value="<?php echo $begintime; ?>"></td>
 					</tr>
 					<tr>
 						<td>Day:</td>
-						<td><input type="text" id="endtime" name="day" value="<?php echo $day; ?>">
+						<td><input type="text" disabled id="endtime" name="day" value="<?php echo $day; ?>">
 						</td>
 					</tr>
 					<tr>
 						<td>Description:</td>
-						<td><textarea rows="10" cols="40" class="textarea1" name="reason" value="<?php echo $reason;?>"></textarea></td>
+						<td><textarea rows="10" cols="40" class="textarea1" disabled name="reason" value="<?php echo $reason;?>"></textarea></td>
 					</tr>
 	  		</table>
 	  	</form>	

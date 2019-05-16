@@ -3,6 +3,7 @@
     		opacity: 0.8;
     		background-size: cover;
     		background-repeat: no-repeat;
+    		color: whitesmoke;
     	}
     	a{
     		text-decoration: none;
@@ -28,44 +29,30 @@
     		 width: 30px;
     	}
         .htitle{
-            margin-inline-start: 35em;
+            margin-inline-start: 25em;
             letter-spacing: 0.2em;
         }
-    	
-    	#menu{
-    		float: left;
-            margin-left: 50px;
-    	}
-			.menu li{
-			width: 150px;
-			list-style: none;
-			line-height: 50px;
-			font-size: larger;
-			font-weight: bold;
-			text-align: center;
-			border-right:  5px solid gray;
-			border-bottom: 5px solid gray;
-		}
-    
     	#staff{
     		float: left;
-    		margin-left: 150px;
-    		width: 700px;
-    		height: 350px;
+    		margin-left: 100px;
+    		width: 800px;
+    		height: 400px;
             overflow-y: scroll;
-
     	}
         .staff{
-            width: 600px;
+            width: 700px;
             text-align: center;
             line-height: 40px;
             height: 350px;
             overflow-y: scroll;
+             border: 1px solid black;
             
         }
     	.staff th,td,tr,{
-    		height: 40px;
-            width: 60px;
+    		height: 20px;
+            width: 30px;
+            border: 1px solid black;
+            border-collapse: collapse;
             
     	}
     	

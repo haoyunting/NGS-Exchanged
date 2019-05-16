@@ -13,17 +13,6 @@
   			<img src="images/3.jpeg" class="userimg"></span>
   	</div>
   	<br/><br/>
-  	<div id="menu">
-  		<ul class="menu">
-  			<li><a href="">home</a></li>
-  			<li><a href="">admin</a></li>
-  			<li><a href="">login</a></li>
-  			<li><a href="">regist</a></li>
-  			<li><a href="">search</a></li>
-  			<li><a href="">my</a></li>
-  			<li><a href="">set</a></li>
-  		</ul>
-  	</div>
 <?php 
 	$db = mysql_connect("localhost","zj","201901f10075");
     mysql_select_db("db_zj", $db);

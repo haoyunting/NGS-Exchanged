@@ -15,32 +15,19 @@
   	</div>
   	<br/><br/>
   	<h3 class="htitle">All Staffs</h3><br>
-  	<div id="menu">
-  		<ul class="menu">
-  			<li><a href="">home</a></li>
-  			<li><a href="">admin</a></li>
-  			<li><a href="">login</a></li>
-  			<li><a href="">regist</a></li>
-  			<li><a href="">search</a></li>
-  			<li><a href="">my</a></li>
-  			<li><a href="">set</a></li>
-  		</ul>
-  	</div>
-	
-  	<div id="staff">
-  		
-  		<table class="staff">
+  	<div id="staff" align="center">
+  		<table class="staff" border="1" cellspacing="o">
 			<tr>
-	    		<th> 
+	    		<td> 
 	    			<a href="view.php?order='name'">name</a> 
 	    			<a href="staffAfterOrder.php?order=username"> ▴ </a>
 	    			<a href="staffAfterOrderdes.php?order=username"> ▾ </a>
-	    		</th>
-	    		<th>
+	    		</td>
+	    		<td>
 	    			<a href="">Department</a>
 	    			<a href="staffAfterOrder.php?order=department"> ▴ </a>
 	    			<a href="staffAfterOrderdes.php?order=department"> ▾ </a>
-	    		</th>
+	    		</td>
   			</tr>
   		<?php 
 			$db = mysql_connect("localhost","zj","201901f10075");

@@ -16,17 +16,6 @@
   	</div>
   	<br/><br/>
     <h3 align="center">You can change your information!</h3>
-  	<div id="menu">
-  		<ul class="menu">
-  			<li><a href="">home</a></li>
-  			<li><a href="">admin</a></li>
-  			<li><a href="">login</a></li>
-  			<li><a href="">regist</a></li>
-  			<li><a href="">search</a></li>
-  			<li><a href="">my</a></li>
-  			<li><a href="">set</a></li>
-  		</ul>
-  	</div>
   	
   	<div id="inf">
         <?php
@@ -47,7 +36,7 @@
 
             ?>
               <form method="post" action="change-inf.php">
-                <table class="basic">
+                <table class="basic" cellspacing="0">
                   <tr>
                     <td><label>Username:</label></td>
                     <td>
@@ -73,8 +62,8 @@
                       <input type="text" name="department" value="<?php echo $attr[4]; ?>">
                     </td>
                   </tr>
-                  <tr style="line-height: 80px;">
-                  <td style="padding-left: 180px;"><button onclick="{location.href='change-inf.php?username=<?php echo $username;?>'}">save</button></td>      
+                  <tr style="line-height: 40px;">
+                  <td colspan="2"><button class="btn1"  onclick="{location.href='change-inf.php?username=<?php echo $username;?>'}">save</button></td>      
                 </tr>
                 </table> 
             </form>

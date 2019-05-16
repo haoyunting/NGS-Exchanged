@@ -22,8 +22,8 @@ session_start();
 	<br><br>
 	<div class="content">
 
-		<div class="content_item_item1">
-			<div><img src="images/8.png"></div>
+		<div class="content_item">
+			<div><img src="images/3.svg"></div>
 			<div><span>Approval</div>
 			<a href="Approval.php" class="enter_but">ENTER</a>
 		</div>
