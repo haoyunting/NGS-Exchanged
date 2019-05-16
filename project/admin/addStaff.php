@@ -13,7 +13,7 @@
 					return false;
 				}
 			}
-		</script>
+		</script>z
 		<?php 
 			$db = mysql_connect("localhost","zj","201901f10075");
 	        mysql_select_db("db_zj", $db);
@@ -54,7 +54,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td><label>Department:</label></td>
+						<td><label>Depart:</label></td>
 						<td>
 							<input type="text" name="department" value="<?php echo $department; ?>">
 						</td>
